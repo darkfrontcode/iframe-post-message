@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		window.onload = function()
+		{
+			var button = document.getElementById("send");
+
+			button.onclick = function(e)
+			{
+				e.preventDefault();
+				window.parent.postMessage("_ACTION_", '*');
+			}
+		}
+	</script>
+	<h1>Filho</h1>
+	<button id="one">Send Message</button>
+	<button id="one">Send Message</button>
+</body>
+</html>

@@ -1,0 +1,18 @@
+{
+  "name": "iframe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "chalk": "^2.3.0",
+    "express": "^4.16.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "pai": "node ./server/pai.js --colors",
+    "filho": "node ./server/filho.js --colors"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+
+		window.addEventListener('message', function(e) {
+			switch(e.data)
+			{
+				case '_ACTION_':
+					alert('dispatch an event from iframe');
+				break;
+			}
+		});	
+		
+	</script>
+	<h1>Pai</h1>
+	<iframe id="iframe" src="http://localhost:1002/">
+</body>
+</html>
