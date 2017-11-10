@@ -12,14 +12,22 @@
 		window.addEventListener('message', function(e) {
 			switch(e.data)
 			{
-				case '_ACTION_':
-					alert('dispatch an event from iframe');
+				case 'AGREEMENT':
+
+					alert('AGREEMENT');
+
+				break;
+
+				case 'RESPONSE':
+
+					alert('RESPONSE');
+
 				break;
 			}
 		});	
 		
 	</script>
 	<h1>Pai</h1>
-	<iframe id="iframe" src="http://localhost:1002/">
+	<iframe id="iframe" src="https://cwi-filho.herokuapp.com/">
 </body>
 </html>

@@ -10,16 +10,25 @@
 	<script>
 		window.onload = function()
 		{
-			var button = document.getElementById("button");
+			var agreementbutton = document.getElementById("agreement");
+			var responsebutton = document.getElementById("response");
 
-			button.onclick = function(e)
+			agreementbutton.onclick = function(e)
 			{
 				e.preventDefault();
-				window.parent.postMessage("_ACTION_", '*');
+				window.parent.postMessage("AGREEMENT", '*');
 			}
+
+			responsebutton.onclick = function(e)
+			{
+				e.preventDefault();
+				window.parent.postMessage("RESPONSE", '*');
+			}
+
 		}
 	</script>
 	<h1>Filho</h1>
-	<button id="button">Send Message</button>
+	<button id="agreement">Dispatch agreement</button>
+	<button id="response">Dispatch response</button>
 </body>
 </html>
